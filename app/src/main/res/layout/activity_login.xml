@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,18 +7,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@drawable/lololajpg"
     tools:context=".Login">
+
+    <!-- ImageView for Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="253dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/loooogo"
+        tools:srcCompat="@drawable/loooogo" />
 
     <TextView
         android:id="@+id/txtusername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Masukkan Username"
-        android:textSize="16sp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:text="Username"
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/loginusername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -32,12 +42,12 @@
         android:id="@+id/txtpass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Masukkan Password"
-        android:textSize="16sp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:text="Password"
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/loginpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -47,18 +57,19 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:text="Login" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnaccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"/>
+        android:text="Register" />
 
+    <!-- Optional: Remove this EditText if not needed -->
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
@@ -67,12 +78,13 @@
         android:hint="@string/app_name"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:visibility="gone"/>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        app:srcCompat="?android:attr/fingerprintAuthDrawable" />
+        android:layout_width="388dp"
+        android:layout_height="58dp"
+        app:srcCompat="?android:attr/fingerprintAuthDrawable" /> <!-- Set visibility to gone if not needed -->
 
 </LinearLayout>

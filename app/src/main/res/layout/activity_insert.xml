@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center_horizontal">
+
+    <!-- ImageView -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="324dp"
+        android:layout_height="253dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/loooogo" />
+
+    <!-- Input untuk Nama -->
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input untuk Umur -->
+    <EditText
+        android:id="@+id/inputUmur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Umur"
+        android:inputType="number"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input untuk Motto -->
+    <EditText
+        android:id="@+id/inputMotto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Motto"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Button untuk Simpan -->
+    <Button
+        android:id="@+id/btnsimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Simpan" />
+
+</LinearLayout>

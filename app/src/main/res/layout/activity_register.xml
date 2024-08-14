@@ -7,4 +7,57 @@
     android:layout_height="match_parent"
     tools:context=".Register">
 
+    <!-- ImageView untuk logo atau gambar -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/nsajan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/eduser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Logo" />
+
+    <!-- EditText untuk Username -->
+    <EditText
+        android:id="@+id/eduser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Username"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- EditText untuk Password -->
+    <EditText
+        android:id="@+id/edpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eduser"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Button untuk Register -->
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        app:layout_constraintTop_toBottomOf="@id/edpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="10dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
